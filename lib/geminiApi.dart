@@ -1,7 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
-import 'dart:io';
+import 'volumePhone.dart';
+import 'audioPhone.dart';
 
 class GeminiAPI{
   //static String? apiKey = dotenv.env["API_KEY"];
@@ -52,6 +53,40 @@ class GeminiAPI{
     } else {
       print('Erro ${response.statusCode}: ${response.body}');
       return "Erro";
+    }
+  }
+
+  Future<String> treatMessageRecieved(String message) async {
+    final geminiReturnMessage = await geminiResponse(message);
+    if (geminiReturnMessage.contains("Erro")){
+      print("Algo deu errado!");
+      return "!-Ok";
+    }
+    if (geminiReturnMessage.startsWith("!")){
+      treatCommand(geminiReturnMessage);
+      return "!+Ok";
+    }
+    return geminiReturnMessage;
+  }
+
+  Future<void> treatCommand(geminiMessage) async{
+    final volumeControl = VolumeControl();
+    final systemMediaControl = SystemMedia();
+    String geminiMessageLowerCase = geminiMessage.toLowerCase();
+    if (geminiMessageLowerCase.contains("volume")){
+      geminiMessageLowerCase.contains("+") ? volumeControl.increaseVolume() : volumeControl.decreaseVolume();
+    }
+    else if (geminiMessageLowerCase.contains("pause")){
+      systemMediaControl.pause();
+    }
+    else if (geminiMessageLowerCase.contains("skip")){
+      systemMediaControl.skipNext();
+    }
+    else if (geminiMessageLowerCase.contains("back")){
+      systemMediaControl.skipPrevious();
+    }
+    else if (geminiMessageLowerCase.contains("play")){
+      systemMediaControl.play();
     }
   }
 

@@ -43,6 +43,10 @@ dependencies:
   google_fonts: ^6.2.1
   flutter_reactive_ble: ^5.0.2
   permission_handler: ^11.3.0
+  volume_controller: ^2.0.2
+  system_media_controller: ^0.0.2
+  image_picker: ^1.0.2
+
 
 
 
@@ -69,6 +73,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/geminiPrompt.txt
+    - assets/image1.png
 
 
   # To add assets to your application, add an assets section, like this:
