@@ -19,7 +19,7 @@ class _ConnectionPageState extends State<ConnectionPage> {
   @override
   void initState() {
     super.initState();
-    udpConnection = UdpProtocolConnection();
+    //udpConnection = UdpProtocolConnection();
     //udpConnection.startListening();
   }
 
