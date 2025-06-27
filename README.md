@@ -22,7 +22,7 @@ O projeto Lexus é uma solução de óculos inteligentes que integra hardware (R
 
 ## Aplicativo Flutter (Android)
 
-### Dependências do projeto
+Dependências do projeto
 - http	Requisições REST à API do Gemini
 - flutter_tts	Para reprodução de texto como fala (fallback/local)
 - udp ou raw_datagram_socket	Comunicação UDP
