@@ -12,7 +12,7 @@ O projeto Lexus é uma solução de óculos inteligentes que integra hardware (R
 
 - Reproduzir a fala no alto-falante embutido nos óculos
 
-Estrutura do projeto:
+## Estrutura do projeto
 
 Lexus-master/
 ├── pubspec.yaml             # Configuração do app Flutter
@@ -23,7 +23,7 @@ Lexus-master/
 
 Aplicativo Flutter (Android)
 
-Dependências do projeto:
+## Dependências do projeto
 - http	Requisições REST à API do Gemini
 - flutter_tts	Para reprodução de texto como fala (fallback/local)
 - udp ou raw_datagram_socket	Comunicação UDP
@@ -36,9 +36,14 @@ Dependências do projeto:
 Arquivos .lib do programa:
 - audioPhone.dart Para controlar o audio do android em comandos do gemini
 - connection.dart Para conectar no IP do HOST do protocolo UDP via wifi
-- geminiApi.dart Para conectar na API 
+- geminiApi.dart Para conectar na API
 
 
+## Lógica do projeto
+
+- Existe uma aplicação no PC escrita em C#, responsável por hostear toda a aplicação, sendo um servidor UDP, com uma porta de broadcast
+- Foi escrita outra aplicação em C#, para conectar nesta porta e ser a responsável pelo intermédio
+- 
 
 
 
