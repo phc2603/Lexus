@@ -14,7 +14,6 @@ O projeto Lexus é uma solução de óculos inteligentes que integra hardware (R
 
 ## Estrutura do projeto
 
-Lexus-master/
 ├── pubspec.yaml # Configuração do app Flutter<br>
 ├── SmartGlasses/ # Código do firmware dos óculos<br>
 ├── Documentação/ # Relatórios e documentação adicional<br>
