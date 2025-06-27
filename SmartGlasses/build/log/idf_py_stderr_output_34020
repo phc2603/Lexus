@@ -1,0 +1,2 @@
+warning: user value 0 on the int symbol ESP_WIFI_STATIC_RX_BUFFER_NUM (defined at C:/Users/tiago/esp/v5.4.1/esp-idf/components/esp_wifi/Kconfig:26) ignored due to being outside the active range ([2, 25]) -- falling back on defaults
+warning: user value 0 on the int symbol ESP_WIFI_DYNAMIC_TX_BUFFER_NUM (defined at C:/Users/tiago/esp/v5.4.1/esp-idf/components/esp_wifi/Kconfig:118) ignored due to being outside the active range ([1, 128]) -- falling back on defaults

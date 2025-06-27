@@ -1,0 +1,3 @@
+C:\Sources\SmartGlasses\SmartGlasses\bin\Release\net9.0\publish\SmartGlasses.pdb
+C:\Sources\SmartGlasses\SmartGlasses\bin\Release\net9.0\publish\libSystem.IO.Ports.Native.so
+C:\Sources\SmartGlasses\SmartGlasses\bin\Release\net9.0\publish\SmartGlasses
