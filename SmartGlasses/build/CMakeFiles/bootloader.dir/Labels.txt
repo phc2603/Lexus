@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Sources/SmartGlasses/build/CMakeFiles/bootloader
+C:/Sources/SmartGlasses/build/CMakeFiles/bootloader.rule
+C:/Sources/SmartGlasses/build/CMakeFiles/bootloader-complete.rule
+C:/Sources/SmartGlasses/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/Sources/SmartGlasses/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Sources/SmartGlasses/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Sources/SmartGlasses/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Sources/SmartGlasses/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Sources/SmartGlasses/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Sources/SmartGlasses/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

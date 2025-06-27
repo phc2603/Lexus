@@ -1,0 +1,2 @@
+source C:/Sources/SmartGlasses/build/bootloader/gdbinit/symbols
+source C:/Sources/SmartGlasses/build/bootloader/gdbinit/connect

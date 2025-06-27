@@ -1,0 +1,32 @@
+-- Existing sdkconfig 'C:/Sources/SmartGlasses/sdkconfig' renamed to 'C:/Sources/SmartGlasses/sdkconfig.old'.
+-- Found Git: C:/Users/tiago/.espressif/tools/idf-git/2.39.2/cmd/git.exe (found version "2.39.2.windows.1")
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Users/tiago/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/tiago/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/tiago/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file C:/Sources/SmartGlasses/sdkconfig
+Loading defaults file C:/Sources/SmartGlasses/sdkconfig.defaults...
+C:/Sources/SmartGlasses/sdkconfig.defaults:32 CONFIG_ESP32_WIFI_STATIC_RX_BUFFER_NUM was replaced with CONFIG_ESP_WIFI_STATIC_RX_BUFFER_NUM 
+C:/Sources/SmartGlasses/sdkconfig.defaults:33 CONFIG_ESP32_WIFI_DYNAMIC_RX_BUFFER_NUM was replaced with CONFIG_ESP_WIFI_DYNAMIC_RX_BUFFER_NUM 
+C:/Sources/SmartGlasses/sdkconfig.defaults:34 CONFIG_ESP32_WIFI_DYNAMIC_TX_BUFFER_NUM was replaced with CONFIG_ESP_WIFI_DYNAMIC_TX_BUFFER_NUM 
+C:/Sources/SmartGlasses/sdkconfig.defaults:35 CONFIG_ESP32_WIFI_TX_BA_WIN was replaced with CONFIG_ESP_WIFI_TX_BA_WIN 
+C:/Sources/SmartGlasses/sdkconfig.defaults:36 CONFIG_ESP32_WIFI_AMPDU_TX_ENABLED was replaced with CONFIG_ESP_WIFI_AMPDU_TX_ENABLED 
+C:/Sources/SmartGlasses/sdkconfig.defaults:37 CONFIG_ESP32_WIFI_AMPDU_RX_ENABLED was replaced with CONFIG_ESP_WIFI_AMPDU_RX_ENABLED 
+C:\Users\tiago\AppData\Local\Temp\kconfgen_tmp6m8o_gck:1 line was updated to # ==== Chip Target ====n
+C:\Users\tiago\AppData\Local\Temp\kconfgen_tmp6m8o_gck:30 line was updated to # ==== Wi-Fi desativado ====n
+C:\Users\tiago\AppData\Local\Temp\kconfgen_tmp6m8o_gck:39 line was updated to # ==== I2S para INMP441 ====n
+C:\Users\tiago\AppData\Local\Temp\kconfgen_tmp6m8o_gck:44 line was updated to # ==== FreeRTOS & Logging ====n
+C:\Users\tiago\AppData\Local\Temp\kconfgen_tmp6m8o_gck:48 line was updated to # ==== Redu├º├úo de tamanho final ====n

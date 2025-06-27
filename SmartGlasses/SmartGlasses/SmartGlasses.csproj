@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <Platforms>AnyCPU;ARM32</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="InTheHand.Net.Bluetooth" Version="4.2.1" />
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="System.IO.Ports" Version="9.0.5" />
+  </ItemGroup>
+
+</Project>
