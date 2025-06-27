@@ -59,7 +59,8 @@ class _UserProfilePageState extends State<UserProfilePage> {
             buildInfoTile("Nome", nome),
             buildInfoTile("Sobrenome", sobrenome),
             buildInfoTile("Idade", idade.toString()),
-            buildInfoTile("Data de nascimento", dataNascimento),
+            buildInfoTile("D"
+                "ata de nascimento", dataNascimento),
             buildInfoTile("País", pais),
             buildInfoTile("Estado", estado),
             buildInfoTile("Cidade", cidade),

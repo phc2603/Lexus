@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'udpProtocol.dart';
+import 'SmartGlassesConnector.dart';
 import 'geminiApi.dart';
 
-late UdpProtocolConnection udpConnection;
+late SmartGlassesConnector connector;
 
 class ConnectionPage extends StatefulWidget {
   const ConnectionPage({super.key});
@@ -19,13 +19,12 @@ class _ConnectionPageState extends State<ConnectionPage> {
   @override
   void initState() {
     super.initState();
-    //udpConnection = UdpProtocolConnection();
-    //udpConnection.startListening();
+    connector = SmartGlassesConnector(GeminiAPI());
   }
 
   @override
   void dispose() {
-    udpConnection.dispose();
+    connector.dispose();
     super.dispose();
   }
 
@@ -34,32 +33,29 @@ class _ConnectionPageState extends State<ConnectionPage> {
       isConnecting = true;
     });
 
-    await Future.delayed(const Duration(seconds: 2));
+    await connector.start();
 
     setState(() {
-      connectedToGlassByUdp = true;
+      connectedToGlassByUdp = connector.smartGlassesIp != null;
       isConnecting = false;
     });
 
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
+        backgroundColor: const Color(0xFF2c5364),
         title: const Text(
-        "Conexão realizada",
-        style: TextStyle(
-          color: Colors.white, // cor branca translúcida
+          "Conexão realizada",
+          style: TextStyle(color: Colors.white),
         ),
-      ),
         content: const Text(
           "Agora você está conectado ao Lexus Smart Glasses!",
-          style: TextStyle(
-            color: Colors.white, // cor branca translúcida
-          ),
+          style: TextStyle(color: Colors.white),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text("OK"),
+            child: const Text("OK", style: TextStyle(color: Colors.amber)),
           ),
         ],
       ),
