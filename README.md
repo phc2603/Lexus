@@ -36,6 +36,10 @@ Arquivos .lib do programa:
 - audioPhone.dart Para controlar o audio do android em comandos do gemini
 - connection.dart Para conectar no IP do HOST do protocolo UDP via wifi
 - geminiApi.dart Para conectar na API
+- main.dart Arquivo principal renderizando o front do APP com os botões e a navigation bar
+- profile.dart Tela de perfil do usuário
+- SmartGlassesConnector.dart Tela princial do APP
+- volumePhone.dart Controlador de volume do celular
 
 
 ## Lógica do projeto
