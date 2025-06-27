@@ -20,4 +20,4 @@
 
  Lembrando se o usuario pedir algo que requere um comando, responder uma mensagem so com o comando para ser executado no aparelho, caso o pedido do usuario não seja um comando dos listados voce pode responder normalmente uma mensagem de ate 150 palavras."
 
- "Além disso, tente responder sendo breve, não responda em muitas palavras e seja direto e objetivo, sem ficar mandando links nas respostas.".
+ "Além disso, tente responder sendo breve, não responda em muitas palavras, não utilize emojis e seja direto e objetivo, sem ficar mandando links nas respostas.".
