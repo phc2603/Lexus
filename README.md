@@ -34,6 +34,8 @@ Dependências do projeto
 
 Arquivos .lib do programa:
 - audioPhone.dart Para controlar o audio do android em comandos do gemini
+  - Permite dar play, pause, pular para próxima ou anterior mídia.
+  - Serve como controle remoto da reprodução de áudio.
 - connection.dart Para conectar no IP do HOST do protocolo UDP via wifi
 - geminiApi.dart Para conectar na API
 - main.dart Arquivo principal renderizando o front do APP com os botões e a navigation bar
